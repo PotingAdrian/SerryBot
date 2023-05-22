@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SerryBot Metin2</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .bg {
+      /* The image used */
+      background-image: url("bg.jpg");
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      /* Position the overlay text container */
+      position: relative;
+    }
+
+    .overlay-text {
+      /* Position the overlay text */
+      position: absolute;
+      top: 50%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+
+      /* Add a transparent background */
+      background-color: rgba(0, 0, 0, 0.5);
+
+      /* Add padding and text color */
+      padding: 10px;
+      color: #fff;
+    }
+
+    .overlay-text h1 {
+      margin: 0;
+    }
+
+    .content-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    .content-text {
+      flex: 1;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .content-image {
+      flex: 1;
+      text-align: center;
+      padding: 40px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  <style>
+    
+
+    .mySlides {
+      text-align:center;
+      margin-left: auto;
+      margin-right: auto;
+      width:100%;
+    }
+
+    .header {
+      padding: 20px;
+      color: #333;
+      text-align: center;
+    }
+
+    .header h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    /* CSS for the navigation bar */
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 5;
+    }
+
+    /* CSS styles for the contact section */
+    .contact-section {
+      background-color: #f1f1f1;
+      padding: 20px;
+      text-align: center;
+    }
+    .contact-heading {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .contact-info {
+      font-size: 16px;
+    }
+
+    .navbar-nav .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu {
+      margin-top: 0;
+    }
+
+    .paragraph {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="">
+      <img src="logos/logo.png" alt="Logo" style="width: 50px; height: auto;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Social Media
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="https://www.youtube.com/channel/UCs-yGbuiuDDmevrrUc04cCA">
+              <img src="logos/youtube-logo.png" alt="Youtube Logo" style="width: 20px; height: auto;">
+              Youtube
+            </a>
+            <a class="dropdown-item" href="https://www.tiktok.com/@serrybotmetin2">
+              <img src="logos/TikTok-icon-glyph.png" alt="TikTok Logo" style="width: 20px; height: auto;">
+              TikTok
+            </a>
+            <a class="dropdown-item" href="https://discord.gg/hb2h9Y8dd8">
+              <img src="logos/discord-logo.png" alt="Discord Logo" style="width: 20px; height: auto;">
+              Discord
+            </a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Add sticky class to navbar on scroll
+    window.onscroll = function() {
+      var navbar = document.querySelector('.navbar');
+      if (window.pageYOffset > 0) {
+        navbar.classList.add('sticky');
+      } else {
+        navbar.classList.remove('sticky');
+      }
+    };
+  </script>
+
+  <div class="bg">
+    <div class="overlay-text">
+      <h1>SerryBot Metin2</h1>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="content-text">
+      <div class="header">
+        <h2>Introducing SerryBot</h2>
+      </div>
+      <p class="paragraph">
+        The Ultimate Gameforge Tool and Private Server Companion!
+        Discover the extraordinary power of SerryBot, an exceptional bot designed to enhance your gaming experience.
+      </p>
+      <p class="paragraph">
+        With its extensive range of features and unparalleled functionality, SerryBot stands out as a truly unique and indispensable asset.
+        Whether you're a seasoned player or exploring private servers, SerryBot has got you covered.
+      </p>
+    </div>
+    <div class="content-image">
+      <!-- <img src="png.png" alt="Your Image" height=80% width=80%> -->
+      <iframe width="600" height="355" src="https://www.youtube.com/embed/SK2C5T-z6Gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="content-image">
+      <iframe width="600" height="355" src="https://www.youtube.com/embed/7wf5FhFLYFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="content-text">
+      <div class="header">
+        <h2>Features</h2>
+      </div>
+      <p class="paragraph">
+        Prepare to be amazed by the sheer versatility of SerryBot. Its exceptional capabilities include the coveted x200 mode, 
+        a game-changing feature exclusively available on our YouTube channel.
+        Prepare to take your gameplay to new heights and achieve unparalleled success.
+      </p>
+      <p class="paragraph">
+        We understand that you may have questions about SerryBot's pricing or specific functionalities. 
+        Look no further! Our dedicated support team is readily available on Discord to provide you with prompt 
+        assistance and address any inquiries you may have. We value our users' satisfaction and strive to ensure a seamless and fulfilling experience.
+      </p>
+    </div>
+  </div>
+
+  <div class="header">
+    <h2>Interface</h2>
+  </div>
+  <div class="w3-content w3-display-container" style="padding: 40px;">
+    <img class="mySlides" src="slideshow/1.png" style="width:90%">
+    <img class="mySlides" src="slideshow/2.png" style="width:90%">
+    <img class="mySlides" src="slideshow/3.png" style="width:90%">
+  
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="content-text">
+      <div class="header">
+        <h2>JOIN US</h2>
+      </div>
+      <p class="paragraph">
+        Curious about pricing or have any questions? Look no further!
+      </p>
+      <p class="paragraph">
+        SerryBot goes beyond being just a tool—it's a community. Join our dynamic Discord community 
+        and become part of a vibrant network of gamers, where you can connect with like-minded individuals, share strategies, 
+        and stay up to date with the latest SerryBot developments.
+      </p>
+      <p class="paragraph">
+        Embrace SerryBot and unlock a world of limitless possibilities. Join us today and embark on an unforgettable gaming journey!
+      </p>
+    </div>
+    <div class="content-image">
+      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@serrybotmetin2/video/7229422015931796762" data-video-id="7229422015931796762" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@serrybotmetin2" href="https://www.tiktok.com/@serrybotmetin2?refer=embed">@serrybotmetin2</a> Metin2 Official Hydra Hack SerryBot<a title="metin2" target="_blank" href="https://www.tiktok.com/tag/metin2?refer=embed">#metin2</a> <a title="metin2tr" target="_blank" href="https://www.tiktok.com/tag/metin2tr?refer=embed">#metin2tr</a> <a title="metin2ro" target="_blank" href="https://www.tiktok.com/tag/metin2ro?refer=embed">#metin2ro</a> <a title="metin2hack" target="_blank" href="https://www.tiktok.com/tag/metin2hack?refer=embed">#metin2hack</a> <a title="metin2hackpl" target="_blank" href="https://www.tiktok.com/tag/metin2hackpl?refer=embed">#metin2hackpl</a> <a title="wom2" target="_blank" href="https://www.tiktok.com/tag/wom2?refer=embed">#wom2</a> <a title="wom2hack" target="_blank" href="https://www.tiktok.com/tag/wom2hack?refer=embed">#wom2hack</a> <a title="hackmetin22022" target="_blank" href="https://www.tiktok.com/tag/hackmetin22022?refer=embed">#hackmetin22022</a> <a title="hackmetin" target="_blank" href="https://www.tiktok.com/tag/hackmetin?refer=embed">#hackmetin</a> <a title="carpathians" target="_blank" href="https://www.tiktok.com/tag/carpathians?refer=embed">#carpathians</a> <a title="tararomaneasca" target="_blank" href="https://www.tiktok.com/tag/tararomaneasca?refer=embed">#tararomaneasca</a> <a title="romania" target="_blank" href="https://www.tiktok.com/tag/romania?refer=embed">#romania</a> <a title="fy" target="_blank" href="https://www.tiktok.com/tag/fy?refer=embed">#fy</a> <a title="5pasidebine" target="_blank" href="https://www.tiktok.com/tag/5pasidebine?refer=embed">#5pasidebine</a> <a title="5p" target="_blank" href="https://www.tiktok.com/tag/5p?refer=embed">#5p</a> <a title="serrybot" target="_blank" href="https://www.tiktok.com/tag/serrybot?refer=embed">#serrybot</a> <a title="origins2" target="_blank" href="https://www.tiktok.com/tag/origins2?refer=embed">#origins2</a> <a title="aeldra" target="_blank" href="https://www.tiktok.com/tag/aeldra?refer=embed">#aeldra</a> <a title="zeta" target="_blank" href="https://www.tiktok.com/tag/zeta?refer=embed">#zeta</a> <a title="zeya" target="_blank" href="https://www.tiktok.com/tag/zeya?refer=embed">#zeya</a> <a title="nostalgia2" target="_blank" href="https://www.tiktok.com/tag/nostalgia2?refer=embed">#nostalgia2</a> <a title="x200hack" target="_blank" href="https://www.tiktok.com/tag/x200hack?refer=embed">#x200hack</a> <a title="besthack" target="_blank" href="https://www.tiktok.com/tag/besthack?refer=embed">#besthack</a> <a title="wom2" target="_blank" href="https://www.tiktok.com/tag/wom2?refer=embed">#wom2</a> <a target="_blank" title="♬ sunet original  - serrybotmetin2" href="https://www.tiktok.com/music/sunet-original-serrybotmetin2-7229422613624310555?refer=embed">♬ sunet original  - serrybotmetin2</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+    </div>
+  </div>
+
+  <div id="contact" class="contact-section">
+    <h2 class="contact-heading">Contact</h2>
+    <p class="contact-info">
+      <a class="nav-link" href="https://discord.gg/hb2h9Y8dd8">
+        <img src="logos/discord-logo.png" alt="Discord Logo" style="width: 20px; height: auto;">
+        Discord
+      </a>
+    </p>
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+
+</body>
+</html>
