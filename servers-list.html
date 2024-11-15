@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>MTBot Metin2</title>
   <style>
-    body, html {
+    body,
+    html {
       height: 100%;
       margin: 0;
     }
@@ -62,15 +64,13 @@
   </style>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  
-  <style>
-    
 
+  <style>
     .mySlides {
-      text-align:center;
+      text-align: center;
       margin-left: auto;
       margin-right: auto;
-      width:100%;
+      width: 100%;
     }
 
     .header {
@@ -100,10 +100,12 @@
       padding: 20px;
       text-align: center;
     }
+
     .contact-heading {
       font-size: 24px;
       margin-bottom: 10px;
     }
+
     .contact-info {
       font-size: 16px;
     }
@@ -125,12 +127,14 @@
     }
   </style>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
     <a class="navbar-brand" href="index.html">
       <img src="M2_bot.png" alt="Logo" style="width: 50px; height: auto;">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -139,7 +143,8 @@
           <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             Social Media
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -158,13 +163,14 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://mega.nz/file/yz5C0CpS#K1iMfgQkqGkfbMddRsN66cGsW72qzMpiNAKsTG8Fqzo">Download</a>
+          <a class="nav-link"
+            href="https://easyupload.io/c7bxk0">Download</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#contact">Contact</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="servers-list.html">Supported servers</a>
+          <a class="nav-link" href="servers-list.html">Supported servers</a>
         </li>
       </ul>
     </div>
@@ -176,7 +182,7 @@
 
   <script>
     // Add sticky class to navbar on scroll
-    window.onscroll = function() {
+    window.onscroll = function () {
       var navbar = document.querySelector('.navbar');
       if (window.pageYOffset > 0) {
         navbar.classList.add('sticky');
@@ -385,7 +391,8 @@
             </tr>
             <tr>
               <td>Calliope2</td>
-              <td><a href="https://global.calliope2-international.com/">https://global.calliope2-international.com/</a></td>
+              <td><a href="https://global.calliope2-international.com/">https://global.calliope2-international.com/</a>
+              </td>
               <td><span class="badge badge-success">Working</span></td>
             </tr>
             <tr>
@@ -440,26 +447,27 @@
       </a>
     </p>
   </div>
-  
+
   <script>
-  var slideIndex = 1;
-  showDivs(slideIndex);
-  
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-  
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
     }
-    x[slideIndex-1].style.display = "block";  
-  }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
   </script>
 
 </body>
+
 </html>
